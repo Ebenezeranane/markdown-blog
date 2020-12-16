@@ -1,0 +1,29 @@
+{
+  "name": "markdown_blog",
+  "version": "1.0.0",
+  "description": "A simple markdown blog with node express and mongoose ",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Markdown_blog "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dompurify": "^2.2.4",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "jsdom": "^16.4.0",
+    "marked": "^1.2.7",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.7",
+    "slugify": "^1.4.6"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "nodemon": "^2.0.6"
+  }
+}
