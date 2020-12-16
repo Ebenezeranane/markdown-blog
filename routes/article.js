@@ -35,7 +35,7 @@ next();
 
 
 //route to handle the update for the edit page
-router.put('/:id', async(req, res) => {
+router.put('/:id', async(req, res,next) => {
 req.article = await findById(req.params.id);
 next()
 }, SaveArticleAndRedirect('edit_article.ejs'));
