@@ -30,13 +30,13 @@ router.get('/:slug', async(req, res) => {
 //route to save article to database and redirect to single article page
 router.post('/', (req, res, next) => {
 req.article = new Article();
-next();
+next()
 } , SaveArticleAndRedirect('new.ejs'));
 
 
 //route to handle the update for the edit page
-router.put('/:id', async(req, res,next) => {
-req.article = await findById(req.params.id);
+router.put('/:id', async(req, res, next) => {
+req.article = await Article.findById(req.params.id);
 next()
 }, SaveArticleAndRedirect('edit_article.ejs'));
 
